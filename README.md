@@ -35,50 +35,5 @@ public class AirlineProblem {
                 newAirline = new Airline(airlineNames);
                 airlinesPartnersNetwork.add( newAirline );
             }
-System.out.println(airlinesPartnersNetwork);
 
-            Scanner keyboard = new Scanner(System.in);
-
-            System.out.print("Enter airline miles are on: ");
-
-            String start = keyboard.nextLine();
-
-            System.out.print("Enter target airline: ");
-
-            String goal = keyboard.nextLine();
-
-            ArrayList<String> pathForMiles = new ArrayList<String>();
-
-            ArrayList<String> airlinesVisited = new ArrayList<String>();
-
-            if( canRedeem(start, goal, pathForMiles, airlinesVisited, airlinesPartnersNetwork))
-
-                System.out.println("Path to redeem miles: " + pathForMiles);
-
-            else
-
-                System.out.println("Cannot convert miles from " + start + " to " + goal + ".");
-
-        }
-
-    }
-
-    
-
-    private static boolean canRedeem(String current, String goal,
-
-            ArrayList<String> pathForMiles, ArrayList<String> airlinesVisited,
-
-            ArrayList<Airline> network){
-
-        if(current.equals(goal)){
-
-            //base case 1, I have found a path!
-
-            pathForMiles.add(current);
-
-            return true;
-
-        }
-
-  ​after that I will take a snapshot showing where you edited it and go for from there 
+  
